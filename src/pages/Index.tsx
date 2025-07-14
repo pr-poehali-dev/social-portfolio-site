@@ -11,23 +11,23 @@ const Index = () => {
   const designProjects = [
     {
       id: 1,
-      title: 'Минималистичный лендинг',
-      description: 'Современный дизайн для IT-компании',
-      category: 'Web Design',
+      title: 'Архитектурная визуализация',
+      description: 'Фотореалистичная 3D модель жилого комплекса',
+      category: '3D Architecture',
       year: '2024'
     },
     {
       id: 2,
-      title: 'Мобильное приложение',
-      description: 'UI/UX дизайн для фитнес-приложения',
-      category: 'Mobile App',
+      title: 'Персонаж для игры',
+      description: 'Детализированная 3D модель воина',
+      category: 'Character Design',
       year: '2024'
     },
     {
       id: 3,
-      title: 'Брендинг',
-      description: 'Фирменный стиль для кафе',
-      category: 'Branding',
+      title: 'Продуктовая визуализация',
+      description: '3D рендер наушников для рекламы',
+      category: 'Product Visualization',
       year: '2023'
     }
   ];
@@ -122,8 +122,8 @@ const Index = () => {
                 value="design" 
                 className="text-white data-[state=active]:bg-white data-[state=active]:text-black font-montserrat font-medium transition-all duration-300"
               >
-                <Icon name="Palette" size={18} className="mr-2" />
-                Дизайн
+                <Icon name="Box" size={18} className="mr-2" />
+                3D Дизайн
               </TabsTrigger>
               <TabsTrigger 
                 value="photo" 
