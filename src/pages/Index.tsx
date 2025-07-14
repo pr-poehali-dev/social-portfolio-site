@@ -56,26 +56,26 @@ const Index = () => {
     }
   ];
 
-  const gameProjects = [
+  const screenshotProjects = [
     {
       id: 1,
-      title: 'Cyberpunk Runner',
-      description: 'Бесконечный раннер в стиле киберпанк',
-      category: 'Mobile Game',
+      title: 'Cyberpunk 2077',
+      description: 'Лучшие моменты прохождения',
+      category: 'RPG',
       year: '2024'
     },
     {
       id: 2,
-      title: 'Puzzle Master',
-      description: 'Головоломка с минималистичным дизайном',
-      category: 'Web Game',
+      title: 'Red Dead Redemption 2',
+      description: 'Пейзажи и атмосфера Дикого Запада',
+      category: 'Action',
       year: '2024'
     },
     {
       id: 3,
-      title: 'Space Explorer',
-      description: 'Исследование космоса в 2D',
-      category: 'Indie Game',
+      title: 'The Witcher 3',
+      description: 'Мир Ведьмака в скриншотах',
+      category: 'RPG',
       year: '2023'
     }
   ];
@@ -86,8 +86,8 @@ const Index = () => {
         return designProjects;
       case 'photo':
         return photoProjects;
-      case 'games':
-        return gameProjects;
+      case 'screenshots':
+        return screenshotProjects;
       default:
         return [];
     }
@@ -110,7 +110,7 @@ const Index = () => {
             Портфолио
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto animate-fade-in">
-            Дизайнер, фотограф, разработчик игр. Создаю визуальные решения и интерактивные проекты.
+            3D дизайнер, фотограф, геймер. Создаю визуальные решения и делюсь скриншотами.
           </p>
         </header>
 
@@ -133,16 +133,16 @@ const Index = () => {
                 Фотография
               </TabsTrigger>
               <TabsTrigger 
-                value="games" 
+                value="screenshots" 
                 className="text-white data-[state=active]:bg-white data-[state=active]:text-black font-montserrat font-medium transition-all duration-300"
               >
-                <Icon name="Gamepad2" size={18} className="mr-2" />
-                Игры
+                <Icon name="Image" size={18} className="mr-2" />
+                Скриншоты
               </TabsTrigger>
             </TabsList>
 
             {/* Content for each tab */}
-            {['design', 'photo', 'games'].map((tab) => (
+            {['design', 'photo', 'screenshots'].map((tab) => (
               <TabsContent key={tab} value={tab} className="mt-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {getProjectsForTab(tab).map((project) => (
